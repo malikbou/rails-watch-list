@@ -12,4 +12,8 @@ Rails.application.routes.draw do
 
   # Read one - The `show` route needs to be *after* `new` route.
   get    "lists/:id",      to: "lists#show", as: :list
+
+  resources :lists do
+    resources :bookmarks, only: [:new, :create]
+  end
 end
