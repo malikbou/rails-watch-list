@@ -2,4 +2,4 @@
 <p><%= "ID: #{@list.id}" %></p>
 <p><%= "Was created at: #{@list.created_at}" %></p>
 <p><%= link_to "Back to all lists", lists_path %></p>
-<%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+<%= cl_image_tag @list.photo.key, height: 800, width: 400, crop: :fill %>
