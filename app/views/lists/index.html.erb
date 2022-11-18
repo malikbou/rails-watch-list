@@ -1,35 +1,16 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">My lists</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">New list</a>
-          </li>
-          <li class="nav-item dropdown">
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" data-turbo-method="delete" href="#">Log out</a>
-            </div>
-          </li>
-          <!--li class="nav-item"-->
-          <!--/li-->
-      </ul>
-    </div>
-  </div>
+<div
+  class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+  style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp');"
+>
+  <h1 class="mb-3 h2">Save any kind of movies</h1>
+  <p>
+    Classic
+  </p>
 </div>
 
-<div class="theatre"></div>
+
+<div class="theatre">
+</div>
 
 
 <div class="container mt-3">
@@ -40,9 +21,3 @@
 </div>
 
 <button type="button" class="btn btn-outline-primary text-white"><%= link_to "Create a movie list", new_list_path %></button>
-
-<%=cl_image_tag("sq3ex0cgi6iqu4hjxz3q")%>
-
-<!-- for face detection -->
-<%= cl_image_tag("qhyw6k5yy9pcgwnm9knk",
-      width: 150, height: 150, crop: :thumb, gravity: :face) %>

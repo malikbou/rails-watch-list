@@ -1,7 +1,7 @@
 .theatre {
   background-image: asset-url("movie_theatre.jpg");
-  background-size: cover;
-  height: 62px;
-  width: 200pxZ;
+  height: 500px;
+  width: 100%;
   object-fit: cover;
+  position: absolute;
 }
