@@ -35,6 +35,8 @@
 <div class="container mt-3">
   <h2>Welcome to the Lists Index!</h2>
     <% @lists.each do |list| %>
-      <li><%= "#{list.id} #{list.name}" %></li>
+      <li><%= link_to "#{list.id} #{list.name}", list %></li>
     <% end %>
 </div>
+
+<button type="button" class="btn btn-outline-primary text-white"><%= link_to "Create a movie list", new_list_path %></button>
